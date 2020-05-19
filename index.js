@@ -48,11 +48,11 @@ server.get('/', (req, res) => {
     res.send('none');
 });
 server.get('/command', (req, res) => {
-    sendCommand(command[req.query.dir]).then()
+    sendCommand(command[req.query.dir]).then();
     res.send('COMMAND');
 });
 server.get('/app', (req, res) => {
-    startApp(apps[req.query.name]).then()
+    startApp(apps[req.query.name]).then();
     res.send('APP');
 });
 server.get('/search', (req, res) => {
